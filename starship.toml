@@ -10,21 +10,13 @@ error_symbol = " [✗](bold red)"     #error_symbol in red
 
 
 [username]
-symbol = "@"
 format = "[➜ ](red)[$user]($style)[@](cyan)"
-style_user = "bold green"
+style_user = "#5fff5f"
 show_always = true 
-
-
-#[battery]
-#full_symbol = "🔋"
-#charging_symbol = "🔌"
-#discharging_symbol = "⚡"
 
 [[battery.display]]
 threshold = 30
 style = "bold red"
-
 
 [cmd_duration]
 min_time = 100_000  # Show command duration over 100,000 milliseconds
@@ -38,14 +30,8 @@ format = "[$path]($style)[$lock_symbol]($lock_style) "
 ssh_only = false
 format = "[$hostname in]($style) "
 trim_at = "-"
-style = "bold green"
+style = "#5fff5f"
 disabled = false
-
-#[status]
-#symbol = "@"
-#format = '[\[$symbol$status_common_meaning$status_signal_name$status_maybe_int\]]($style)'
-#map_symbol = true
-#disabled = false
 
 [aws]
 symbol = " "
@@ -56,7 +42,7 @@ symbol = " "
 [dart]
 symbol = " "
 
-[docker]
+[docker_context]
 symbol = " "
 
 [elixir]
@@ -71,8 +57,8 @@ symbol = " "
 [golang]
 symbol = " "
 
-[haskell]
-symbol = " "
+#[haskell]
+#symbol = " "
 
 [hg_branch]
 symbol = " "
@@ -115,8 +101,8 @@ symbol = "ﯣ "
 
 [memory_usage]
 format = "$symbol[${ram}( | ${swap})]($style) "
-show_percentage = true
-show_swap = true
+#show_percentage = true
+#show_swap = true
 threshold = 70
 style = "bold dimmed white"
 disabled = false
